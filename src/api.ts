@@ -17,7 +17,8 @@ export const submitJob = async (query: string) => {
   }
 };
 
-export const getJobStatus = async (jobId) => {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export const getJobStatus = async (jobId: any) => {
   try {
     const JobsId = jobId.jobId
     console.log('jobId is ', JobsId)
